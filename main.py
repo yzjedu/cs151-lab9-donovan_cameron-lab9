@@ -13,20 +13,25 @@
 # Purpose:  reading file
   # Parameters: none
   # Return: file
+def read_file_name():
+
 
 # Purpose:  reading file to list
   # Parameters: file name
   # Return: data
+def file_to_list():
+
 
 # Purpose:  formate the group
   # Parameters: lists
   # Return: formated groups
+def table_groups():
+
 
 # Purpose:  calling other functions
   # Parameters: none
   # Return: none
 def main():
-
 
 
 main()
