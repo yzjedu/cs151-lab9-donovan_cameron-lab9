@@ -51,8 +51,3 @@
    3. call table groups
 
 3. call main function
-
-
-tables needed
-5 people per table
-who is sitting at each table
