@@ -10,6 +10,21 @@
 
 
 
-# Purpose:  [what problem does the function solve?]
-  # Parameters: [list with purpose in the same order they appear in the function header]
-  # Return: [return value, it's type, and what it represents]
+# Purpose:  reading file
+  # Parameters: none
+  # Return: file
+
+# Purpose:  reading file to list
+  # Parameters: file name
+  # Return: data
+
+# Purpose:  formate the group
+  # Parameters: lists
+  # Return: formated groups
+
+# Purpose:  calling other functions
+  # Parameters: none
+  # Return: none
+
+
+
