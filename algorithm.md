@@ -1,30 +1,29 @@
 # Algorithm Document
-#### PLEASE! PLEASE! PLEASE! THINK before you code...
 
 
-1. ### Purpose: reading file
+### Purpose: reading file
     ### Name: read_file_name
     ### Parameters: none
     ### Return: file name
     ### Algorithm: 
    1. ask user for file name
    2. while file is not available 
-      1. ask user for file name
+      1. prints error messaging
+      2. ask user for file name
    3. return file name
 
-2. ### Purpose: reading file to lists
+### Purpose: reading file to lists
     ### Name: file_to_list
     ### Parameters: file name
     ### Return: data
     ### Algorithm:
-   1. set data equal to empty list
-   2. open file
-   3. readlines in file
-   4. set names equal to list data
-      1. return data
+   1. open file
+   2. readlines in file and set to data
+   3. close the file
+   4. return data
 
    
-1. ### Purpose: formate the groups
+### Purpose: formate the groups
     ### Name: table_groups
     ### Parameters: lists
     ### Return: formated groups
@@ -41,7 +40,7 @@
    5. output '~' times 15
    6. return
 
-2. ### Purpose: calling other function
+### Purpose: calling other function
     ### Name: main
     ### Parameters: none
     ### Return: nothing

@@ -29,10 +29,11 @@ def read_file_name():
   # Parameters: file name
   # Return: data
 def file_to_list(file_name):
+
     # Open the file
     file_data = open(file_name, 'r')
 
-    # Read all lines from the file and store them as a list of strings
+    # Read all lines from the file and store them as a list of strings in a list called data
     data = file_data.readlines()
 
     # Close the file
@@ -46,15 +47,21 @@ def file_to_list(file_name):
   # Parameters: lists
   # Return: formated groups
 def table_groups(list_data):
+    # prints the line divider to make code more aesthetically pleasing
     print('~'* 30)
+
+    # sets the localized variables to track the table and seat
     table = 1
     seat = 1
+
+    # prints out each line in the list into a formatted seating chart
     for i in range(0, len(list_data) - 1):
         print(f'Table {table}, Seat {seat}  {list_data[i]}')
         seat += 1
         if seat > 6:
             table += 1
             seat = 1
+    # prints the line divider to make code more aesthetically pleasing
     print('~' * 30)
 
 
@@ -62,12 +69,18 @@ def table_groups(list_data):
   # Parameters: none
   # Return: none
 def main():
+    # prints the purpose of the program to the user
     print('\n'
           'This python program is designed to take names from a txt file and use them to create a seating chart.')
+    # gets the file name from the user
     file_name = read_file_name()
+
+    # puts the information in the file into a list
     list_data = ((file_to_list(file_name)))
+
+    # formats the list into a seating chart
     table_groups(list_data)
     print('Thank you for using our program.')
 
-
+# calls the main function
 main()
